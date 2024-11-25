@@ -3,11 +3,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
 from pydantic import BaseModel
-import nest_asyncio
 from pycaret.regression import load_model, predict_model
-
-# Apply nest_asyncio
-nest_asyncio.apply()
 
 # Load model
 model = load_model('model_version_1')
@@ -60,5 +56,3 @@ def predict(request: PredictionRequest):
     first_prediction = predictions["prediction_label"].iloc[0]
     return {"prediction_label": first_prediction}
 
-if __name__ == '__main__':
-    uvicorn.run(app, host='127.0.0.1', port=8005)
