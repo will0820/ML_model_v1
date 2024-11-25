@@ -1,1 +1,6 @@
 fastapi[all]
+pandas
+uvicorn
+pydantic
+nest_asyncio
+pycaret
