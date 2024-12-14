@@ -8,7 +8,7 @@ from supabase import create_client, Client
 supabase_url = "https://ycimfxsnhtqakxqaknmj.supabase.co"
 supabase_key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InljaW1meHNuaHRxYWt4cWFrbm1qIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzQwMjI2MDgsImV4cCI6MjA0OTU5ODYwOH0.cRPg4-kAkBN_H8R38_fNR8k3sV8o7FL1yafAy0wWISU"
 
-# Initialize the Supabase client
+# Initialize the Supabase clien
 supabase: Client = create_client(supabase_url, supabase_key)
 
 # Load model
