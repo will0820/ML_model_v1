@@ -30,7 +30,7 @@ class PredictionRequest(BaseModel):
     
     Country_Name: str
     MtCo2: float
-    
+#qawe
 
 @app.post('/predict')
 def predict(request: PredictionRequest):
